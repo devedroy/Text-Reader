@@ -32,7 +32,6 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        binding.tvViewer.text = stringBuilder.toString()
-
+        binding.wvViewer.loadData(stringBuilder.toString(), "text/html", "UTF-8")
     }
 }
